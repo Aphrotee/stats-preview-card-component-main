@@ -1,0 +1,114 @@
+
+   .attribution { font-size: 11px; text-align: center; margin-top: 5px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    span{color: hsl(277, 64%, 61%);}
+    .container{
+      margin-top: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:  auto auto;
+      grid-template-areas: "one" "two" "three";
+      border-radius: 5px;
+      background-color: hsl(244, 38%, 16%);
+    }
+    .item1{
+      grid-area: one;
+     background-color: hsl(277, 64%, 61%);
+     background-blend-mode: multiply;
+     background-image: url(images/image-header-mobile.jpg);
+     opacity: 0.8;
+     background-size: cover;
+    }
+    .item2{
+      grid-area: two;
+      text-align: center;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .item3{
+      grid-area: three;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-bottom: 50px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "sone" "stwo" "sthree";
+    }
+    body{
+      background: hsl(233, 47%, 7%);
+      width: 100%;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    h3{
+      color: hsl(0, 0%, 100%);
+      font-family: Inter;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    .stats{
+      color: hsl(0, 0%, 100%);
+      font-size: 25px;
+      font-family: Inter;
+      font-weight: 700;
+    }
+    .s1{
+      text-align: center;
+      margin-top: 13.5px;
+      grid-area: sone;
+    }
+    .s2{
+      text-align: center;
+      margin-top: 13.5px;
+      grid-area: stwo;
+    }
+    .s3{
+      text-align: center;
+      margin-top: 13.5px;
+      grid-area: sthree;
+    }
+    .statshead{
+      color:  hsla(0, 0%, 100%, 0.6);
+      font-size: 13.5px;
+      font-family: Lexend Deca;
+      font-weight: 400;
+      margin-top: 8.5px;
+    }
+    .mainpara{
+      color:  hsla(0, 0%, 100%, 0.75);
+      font-size: 15px ;
+      font-family: Inter;
+      font-weight: 400;
+      margin-bottom: 35px;
+    }
+    @media screen and (min-width: 800px) {
+      .container{
+      margin-left: 10px;
+      margin-right: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas: "two one"
+      "three one";
+      border-radius: 5px;
+      background-color: hsl(244, 38%, 16%);
+      }
+      .item2{
+        margin-left: 60px;
+        margin-top: 30px;
+        text-align: left;
+      }
+      .item3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "sone stwo sthree";
+        margin-bottom: 60px;
+      }
+      .s1{
+        margin-right: 30px;}
+      .s2{
+      margin-right: 30px;}
+    }
